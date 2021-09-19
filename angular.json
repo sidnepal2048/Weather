@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "WeatherAppClient"
+    }
+  },
+  "defaultProject": "WeatherAppClient",
+  "cli": {
+    "analytics": false
+  }
 }
