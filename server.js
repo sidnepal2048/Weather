@@ -5,11 +5,11 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/WEATHERAPPCLIENT'));
+app.use(express.static(__dirname + '/dist/weather-app-client'));
 
 app.get('/*', function(req,res) {
     
-res.sendFile(path.join(__dirname+'/dist/WEATHERAPPCLIENT/index.html'));
+res.sendFile(path.join(__dirname+'/dist/weather-app-client/index.html'));
 });
 
 // Start the app by listening on the default Heroku port
